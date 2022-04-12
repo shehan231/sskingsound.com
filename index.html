@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS KING SOUND</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="conteiner">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="https://www.masterstudies.com/Masters-Degree/Audio-Engineering/">HOME</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Marshmello">ABOUT</a></li>
+                <li><a href="https://wynk.in/music/package/latest-sinhala/bb_1554719952630">LISTN</a></li>
+                <li><a href="https://www.songhub.lk/song/rana-hansa-yuwala-samitha-mudunkotuwa">DOWNLOAD</a></li>
+                <li><a href="https://www.youtube.com/channel/UC3cyEZawcGdqHQVhLPPcXFQ/featured">SS GAMING</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="left-col">
+                <h1><I>SS KING</I><br>REAL<br>SOUND</h1>
+            </div>
+            <div class="right-col">
+                <p>click Here To Listen </p>
+                <img src="images/play.png" id="icon">
+            </div>
+        </div>
+
+    </div>
+
+    <audio id="mySong">
+<source src="images/song.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+
+var mySong = document.getElementById("mySong")
+var icon = document.getElementById("icon")
+
+icon.onclick = function(){
+    if(mySong.paused){
+        mySong.play();
+        icon.src = "images/pause.png";
+    }else{
+        mySong.pause();
+        icon.src = "images/play.png";
+    }
+}
+
+    </script>
+    
+</body>
+</html>
